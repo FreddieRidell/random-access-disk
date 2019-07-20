@@ -115,7 +115,7 @@ impl RandomAccess for RandomAccessDisk {
     Ok(())
   }
 
-  fn len(&mut self) -> Result<usize, Self::Error> {
+  fn len(&self) -> Result<usize, Self::Error> {
     Ok(self.length as usize)
   }
 
